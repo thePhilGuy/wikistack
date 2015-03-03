@@ -1,0 +1,7 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>{{doc.title}}</h1>
+	  <p>{{doc|marked}}</p>
+	  <p> Created: <i>{{doc.date|date('m/d/Y')}}</i></p>
+{% endblock %}
