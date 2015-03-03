@@ -3,14 +3,14 @@
 {% block content %}
     <h1>{{title}}</h1>
 
-	<form>
+	<form action="/add/submit" method="post">
 	  <div class="form-group">
 	    <label for="inputTitle">Title</label>
-	    <input type="text" class="form-control" id="inputTitle" >
+	    <input type="text" class="form-control" id="inputTitle" name="title">
 	  </div>
 	  <div class="form-group">
 	    <label for="inputContent">Content</label>
-	    <textarea class="form-control" rows="5" id="inputContent"></textarea>
+	    <textarea class="form-control" rows="5" id="inputContent" name="content"></textarea>
 	  </div>
 	  <button type="submit" class="btn btn-default">Submit</button>
 	</form>
